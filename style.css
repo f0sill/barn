@@ -12,7 +12,9 @@ body{
 
 										/* -+-+-+> general stuff <+-+-+- */
 
-
+.sticky{
+	position: sticky;
+}
 
 .container{
 	min-height: 1000px;
