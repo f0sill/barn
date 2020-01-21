@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-color: gainsboro;
+	margin: 0;
+	width: 100%;
+	/*font-family: 'Audiowide', cursive;*/
+	/*font-family: 'Montserrat', sans-serif;*/
+}
+
+
+
+										/* -+-+-+> general stuff <+-+-+- */
+
+
+
+.container{
+	min-height: 1000px;
+	
+}
+
+.footer{
+	height: 300px;
+	background-color: whitesmoke;
+	padding: 40px;
+	color: slategray;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -200px;
+	
+}
+
+
+
+
+											/* -+-+-+> NavBar <+-+-+- */
+
+
+
+
+ul{
+	display: flex;
+	position: absolute;
+	margin-left: -10px;
+	background: #2ca3f9;
+	border-radius: 30px;
+	transform: translate(-50%, -50%);
+	
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+
+ul li{
+	list-style: none;
+	width: 320px;
+	
+}
+
+ul li a{
+	display: block;
+	padding: 23px;
+	text-align: center;
+	color: antiquewhite;
+	transition: 0.5s;
+	text-decoration: none;
+}
+ul li.active a{
+	color: #000;
+}
+.slide{
+	position: absolute;
+	width: 320px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.5s;
+	background: #fff;
+}
+
+ul li:nth-child(1).active ~ .slide{
+	left: -2px;
+	opacity: 1;
+}
+ul li:nth-child(2).active ~ .slide{
+	left: 320px;
+	opacity: 1;
+}
+ul li:nth-child(3).active ~ .slide{
+	left: 640px;
+	opacity: 1;
+}
+ul li:nth-child(4).active ~ .slide{
+	left: 960px;
+	opacity: 1;
+}
+ul li:nth-child(5).active ~ .slide{
+	left: 1280px;
+	opacity: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.nav{
+	height: 64px;
+	position: -webkit-sticky;
+}
+
+
+
+
+
+										/* -+-+-+> Section: header <+-+-+- */
+
+
+
+.header{
+	background-color: #73c2fb;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -100px;
+	height: 600px;
+	text-align: center;
+
+	
+}
+
+.header p{
+	color: aliceblue;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 100px;
+	font-style: italic;
+	text-align: center;
+	vertical-align: middle;
+	padding: 210px;
+	letter-spacing: 10px;
+}
+
+
+
+										/* -+-+-+> b&w divs' stuff <+-+-+- */
+
+
+.white{
+	background-color: #fff;
+	padding: 400px 0;
+	transform: skew(0deg, -5deg) translateY(-120px);
+	overflow: hidden;
+	position: relative;
+	z-index: -1;
+	margin-top: -200px;
+	color: #333;
+	
+}
+
+.content{
+	padding: 150px 150px;
+	transform: skew(0deg, 5deg);
+}
+
+.grey{
+	background-color: #2ca3f9;
+	padding: 400px 0;
+	transform: skew(0deg, 5deg) translateY(-120px);
+	overflow: hidden;
+	position: relative;
+	z-index: -2;
+	margin-top: -400px;
+	color: #fff;
+}
+
+.contentGrey{
+	padding: 150px 150px;
+	text-align: right;
+	transform: skew(0deg, -5deg);
+}
+
+.contentGrey p{
+	text-align: left;
+}
+
+.sticky{
+	position: fixed;
+	top: 20px;
+}
+
+
+
+										/* -+-+-+> div: History <+-+-+- */
+
+
+section h1{
+	font-family: 'Audiowide', cursive;
+	font-size: 50px;
+}
+
+section p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+.right{
+	float: right;
+	width: 50%;
+	
+}
+
+.left{
+	float: left;
+	width: 40%;
+	margin-top: 200px;
+	margin-left: -200px;
+}
+
+
+
+										/* -+-+-+> Section: footer <+-+-+- */
+
+#wrap{
+	display: flex;
+}
+
+.footer #rightF{
+	text-align: right;
+	width: 30%;
+	overflow: hidden;
+	margin-left: 20%;
+}
+
+.footer #leftF{
+	text-align: left;
+	width: 30%;
+	overflow: hidden;
+	margin-right: 20%;
+}
+
+#cent{
+	text-align: center;
+}
+
+.footer img{
+	width: 40px;
+}
+
+#leftF{
+	
+}
